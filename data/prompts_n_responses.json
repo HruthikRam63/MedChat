@@ -1,0 +1,472 @@
+{
+  "targets": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Howdy",
+        "What's up?",
+        "Greetings",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?",
+        "Hello! How can I assist you today?",
+        "Hi! How are you doing?",
+        "Greetings! What can I do for you?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time",
+        "Catch you later",
+        "Take care",
+        "Have a great day",
+        "I'm out",
+        "Peace out"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Goodbye! Take care!",
+        "See you soon!",
+        "Farewell!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "Much appreciated",
+        "Thank you very much",
+        "I'm grateful",
+        "Cheers",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're welcome!",
+        "Glad I could assist!",
+        "No problem!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand",
+        "Could you clarify that?",
+        "I'm not sure what you mean",
+        "Could you please elaborate?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered",
+        "What services do you offer?",
+        "Can you help me?",
+        "What can you assist with?",
+        "What are your capabilities?",
+        "What can I ask you?"
+      ],
+      "responses": [
+        "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
+        "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies",
+        "I can assist with drug reactions, blood pressure monitoring, hospital search, and pharmacy lookup.",
+        "You can ask me about adverse drug reactions, blood pressure, hospital data, and pharmacy locations.",
+        "I'm here to help with medication info, blood pressure logs, hospital transfers, and finding pharmacies."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "adverse_drug",
+      "patterns": [
+        "How to check Adverse drug reaction?",
+        "Open adverse drugs module",
+        "Give me a list of drugs causing adverse behavior",
+        "List all drugs suitable for patient with adverse reaction",
+        "Which drugs don't have adverse reaction?",
+        "Show drugs with no adverse effects",
+        "Find medications without adverse reactions",
+        "Can you help me with adverse drug information?",
+        "Adverse drug reaction check",
+        "How do I find drugs without adverse reactions?"
+      ],
+      "responses": [
+        "Navigating to Adverse drug reaction module",
+        "Loading adverse drug reaction data",
+        "Opening module for adverse drug reactions",
+        "Here is the adverse drug reaction information",
+        "Let me show you the drugs with no adverse effects"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": [
+        "Open blood pressure module",
+        "Task related to blood pressure",
+        "Blood pressure data entry",
+        "I want to log blood pressure results",
+        "Blood pressure data management",
+        "Show me the blood pressure module",
+        "Log my blood pressure",
+        "Where can I enter blood pressure data?",
+        "Blood pressure tracking",
+        "I need to record my blood pressure"
+      ],
+      "responses": [
+        "Navigating to Blood Pressure module",
+        "Opening blood pressure management tool",
+        "Here is the blood pressure data entry module",
+        "You can now log your blood pressure",
+        "Blood pressure module is now open"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_pressure_search",
+      "patterns": [
+        "I want to search for blood pressure result history",
+        "Blood pressure for patient",
+        "Load patient blood pressure result",
+        "Show blood pressure results for patient",
+        "Find blood pressure results by ID",
+        "Search blood pressure logs",
+        "Find previous blood pressure entries",
+        "Check patient's blood pressure history",
+        "Show me the blood pressure records",
+        "Look up blood pressure data"
+      ],
+      "responses": [
+        "Please provide Patient ID",
+        "Patient ID?",
+        "Can you give me the Patient ID?",
+        "Enter the Patient ID to continue",
+        "I'll need the Patient ID for that"
+      ],
+      "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {
+      "tag": "search_blood_pressure_by_patient_id",
+      "patterns": [],
+      "responses": [
+        "Loading Blood pressure result for Patient",
+        "Retrieving blood pressure data for the patient",
+        "Here are the blood pressure results for the patient",
+        "Fetching the blood pressure history",
+        "Patient's blood pressure data is being loaded"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pharmacy_search",
+      "patterns": [
+        "Find me a pharmacy",
+        "Find pharmacy",
+        "List of pharmacies nearby",
+        "Locate pharmacy",
+        "Search pharmacy",
+        "Pharmacy lookup",
+        "Help me find a pharmacy",
+        "Where is the nearest pharmacy?",
+        "Show pharmacies around",
+        "I need a pharmacy"
+      ],
+      "responses": [
+        "Please provide pharmacy name",
+        "Pharmacy name?",
+        "Can you tell me the pharmacy name?",
+        "Enter the pharmacy name to proceed",
+        "I'll need the pharmacy name to help you"
+      ],
+      "context": ["search_pharmacy_by_name"]
+    },
+    {
+      "tag": "search_pharmacy_by_name",
+      "patterns": [],
+      "responses": [
+        "Loading pharmacy details",
+        "Fetching details for the specified pharmacy",
+        "Here are the details for the pharmacy",
+        "Pharmacy information is being retrieved",
+        "Loading the requested pharmacy data"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hospital_search",
+      "patterns": [
+        "Lookup for hospital",
+        "Searching for hospital to transfer patient",
+        "I want to search hospital data",
+        "Hospital lookup for patient",
+        "Looking up hospital details",
+        "Find me a hospital",
+        "Search for hospitals",
+        "Hospital search",
+        "Locate a hospital for me",
+        "I need hospital information"
+      ],
+      "responses": [
+        "Please provide hospital name or location",
+        "Hospital name or location?",
+        "Enter the hospital name or location",
+        "I'll need the hospital name or location",
+        "Please provide the necessary hospital information"
+      ],
+      "context": ["search_hospital_by_params"]
+    },
+    {
+      "tag": "search_hospital_by_params",
+      "patterns": [],
+      "responses": [
+        "Please provide hospital type",
+        "Hospital type?",
+        "What type of hospital are you looking for?",
+        "Can you specify the hospital type?",
+        "I'll need the hospital type to proceed"
+      ],
+      "context": ["search_hospital_by_type"]
+    },
+    {
+      "tag": "search_hospital_by_type",
+      "patterns": [],
+      "responses": [
+        "Loading hospital details",
+        "Fetching the hospital information",
+        "Here are the details for the hospital",
+        "Hospital data is being retrieved",
+        "Loading the requested hospital information"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "appointment_scheduling",
+      "patterns": [
+        "I need to schedule an appointment",
+        "Book an appointment for me",
+        "Can I set up an appointment?",
+        "I want to make an appointment",
+        "Schedule a visit for me",
+        "Arrange a meeting",
+        "How can I book an appointment?"
+      ],
+      "responses": [
+        "Sure, I can help with that. Please provide a date and time.",
+        "Let's schedule your appointment. When would you like to come in?",
+        "I can book an appointment for you. What time works best?",
+        "Please tell me your preferred date and time for the appointment.",
+        "I'll help you schedule that. When are you available?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "cancel_appointment",
+      "patterns": [
+        "I need to cancel my appointment",
+        "Can I cancel my booking?",
+        "Cancel my appointment",
+        "I want to cancel my scheduled visit",
+        "Cancel the meeting",
+        "How do I cancel an appointment?"
+      ],
+      "responses": [
+        "Your appointment has been canceled. If you need to reschedule, let me know.",
+        "I’ve canceled your appointment. Feel free to book another one anytime.",
+        "The appointment has been successfully canceled.",
+        "Your appointment has been canceled. Please reach out if you need anything else.",
+        "I've canceled your booking. Is there anything else I can help with?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "opening_hours",
+      "patterns": [
+        "What are your opening hours?",
+        "When are you open?",
+        "Tell me your business hours",
+        "What time do you open?",
+        "When do you close?",
+        "What are your hours of operation?",
+        "Can you tell me the working hours?",
+        "What time do you start working?"
+      ],
+      "responses": [
+        "We are open from 9 AM to 5 PM, Monday through Friday.",
+        "Our business hours are 9 AM to 6 PM on weekdays.",
+        "We operate from 9 AM to 5 PM, Monday to Friday.",
+        "Our working hours are 9 AM to 6 PM, Monday through Friday.",
+        "We are open from 9 AM to 5 PM, Monday to Friday."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "What payment methods do you accept?",
+        "How can I pay?",
+        "Do you accept credit cards?",
+        "Can I pay with my debit card?",
+        "What are your payment options?",
+        "Do you take cash?",
+        "What forms of payment do you accept?"
+      ],
+      "responses": [
+        "We accept credit cards, debit cards, and cash payments.",
+        "You can pay using credit cards, debit cards, or cash.",
+        "Our payment methods include credit cards, debit cards, and cash.",
+        "We accept various payment options including credit cards, debit cards, and cash.",
+        "You can use a credit card, debit card, or pay in cash."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "delivery_options",
+      "patterns": [
+        "What delivery options do you offer?",
+        "Can you deliver to my home?",
+        "Do you provide home delivery?",
+        "How can I get my order delivered?",
+        "Tell me about your delivery services",
+        "What are the delivery methods available?"
+      ],
+      "responses": [
+        "We offer standard delivery, express delivery, and in-store pickup.",
+        "You can choose from standard or express delivery, or opt for in-store pickup.",
+        "We provide home delivery via standard or express services, and you can also pick up in-store.",
+        "Delivery options include standard shipping, express shipping, and in-store pickup.",
+        "We can deliver to your home or you can choose to pick up your order in-store."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "What is your refund policy?",
+        "Can I get a refund?",
+        "How do refunds work?",
+        "Tell me about your return policy",
+        "Do you offer refunds?",
+        "What is the policy for returning items?"
+      ],
+      "responses": [
+        "Our refund policy allows returns within 30 days of purchase with a receipt.",
+        "You can request a refund within 30 days if you have the receipt.",
+        "We offer refunds for returns made within 30 days of purchase.",
+        "You are eligible for a refund within 30 days if you have proof of purchase.",
+        "Our return policy includes a 30-day refund period with the original receipt."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "I need technical support",
+        "Can you help with technical issues?",
+        "I'm having trouble with your service",
+        "How do I get tech support?",
+        "I need help with a technical problem",
+        "Is there tech support available?",
+        "How can I get technical assistance?"
+      ],
+      "responses": [
+        "I can assist with that. Please describe the issue you are facing.",
+        "Sure, what technical problem are you encountering?",
+        "I'm here to help. Can you tell me more about the technical issue?",
+        "Please let me know the problem, and I'll do my best to assist.",
+        "I'm ready to help with any technical issues. What seems to be the problem?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "headache",
+      "patterns": [
+        "I have a headache",
+        "My head hurts",
+        "I'm feeling a headache",
+        "What should I do for a headache?",
+        "I have a migraine",
+        "My head is throbbing",
+        "I'm experiencing a headache",
+        "Can you help with my headache?"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Have you taken any medication, or would you like some advice on how to relieve it?",
+        "You can try resting in a quiet, dark room. If it persists, please consult a doctor.",
+        "For a headache, make sure to stay hydrated and rest. If it's severe or persistent, consider seeing a healthcare professional.",
+        "A cold compress on your forehead might help. If the headache continues, seek medical advice."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "fever",
+      "patterns": [
+        "I have a fever",
+        "My temperature is high",
+        "I'm feeling feverish",
+        "What should I do if I have a fever?",
+        "I have a high temperature",
+        "I'm running a fever",
+        "Can you help with my fever?"
+      ],
+      "responses": [
+        "It's important to stay hydrated and rest. Over-the-counter medication might help lower your fever, but consult a doctor if it persists or is very high.",
+        "Try to rest and drink plenty of fluids. If your fever is very high or lasts more than a few days, please contact a healthcare professional.",
+        "A fever is often a sign of an underlying condition. If you have other symptoms or the fever is very high, seek medical attention.",
+        "Make sure to monitor your temperature and stay hydrated. If the fever persists or is accompanied by severe symptoms, seek medical advice."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "general_medical_advice",
+      "patterns": [
+        "I need medical advice",
+        "Can you give me health tips?",
+        "What should I do if I feel unwell?",
+        "I have some health concerns",
+        "Can you provide general medical advice?",
+        "What are some tips for staying healthy?"
+      ],
+      "responses": [
+        "For general health concerns, it's best to consult with a healthcare professional. For common issues, maintaining a healthy diet, regular exercise, and adequate rest are key.",
+        "If you have specific health concerns, please see a medical professional. For general well-being, consider healthy eating, regular physical activity, and managing stress.",
+        "It's important to listen to your body and seek medical advice for persistent or severe symptoms. For general health, aim for a balanced lifestyle with proper nutrition and exercise.",
+        "If you're feeling unwell, rest and hydration are important. For any ongoing health issues or concerns, consulting with a healthcare provider is recommended."
+      ],
+      "context": [""]
+    }
+  ]
+}
