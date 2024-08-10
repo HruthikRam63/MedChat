@@ -4,7 +4,7 @@
 ## Project Description
 <br clear="both">
 
-<img align="right" height="200" src="https://i.postimg.cc/Fs4dFcqD/Med-Chat-icon.jpg" alt="MedChat Logo" />
+<img align="right" height="250" src="https://i.postimg.cc/Fs4dFcqD/Med-Chat-icon.jpg" alt="MedChat Logo" />
 
 **MedChat** is a sophisticated chatbot designed to provide users with essential medical information. It answers queries related to adverse drug reactions, monitors blood pressure, provides hospital data, and locates pharmacies. By leveraging advanced natural language processing (NLP) and machine learning models, MedChat ensures accurate and helpful responses to a wide range of medical inquiries. This project combines user-friendly design with powerful backend algorithms to deliver an engaging and informative experience.
 
@@ -159,10 +159,10 @@ For any questions or inquiries, please contact:
 ## Screenshots
 
 <p align="center">
-    <img src="https://i.postimg.cc/gX58ZgtY/Screenshot-2024-08-10-105322.png" alt="Screenshot 1" width="200"/>
-    <img src="https://i.postimg.cc/30vpC2z2/Screenshot-2024-08-10-105413.png" alt="Screenshot 2" width="200"/>
-    <img src="https://i.postimg.cc/w3yhpd33/Screenshot-2024-08-10-105452.png" alt="Screenshot 3" width="200"/>
-    <img src="https://i.postimg.cc/zVTKySCr/Screenshot-2024-08-10-105515.png" alt="Screenshot 4" width="200"/>
-    <img src="https://i.postimg.cc/14kDRYNB/Screenshot-2024-08-10-105539.png" alt="Screenshot 5" width="200"/>
-    <img src="https://i.postimg.cc/4YZtV7Ph/Screenshot-2024-08-10-105600.png" alt="Screenshot 6" width="200"/>
+    <img src="https://i.postimg.cc/gX58ZgtY/Screenshot-2024-08-10-105322.png" alt="Screenshot 1" width="250"/>
+    <img src="https://i.postimg.cc/30vpC2z2/Screenshot-2024-08-10-105413.png" alt="Screenshot 2" width="250"/>
+    <img src="https://i.postimg.cc/w3yhpd33/Screenshot-2024-08-10-105452.png" alt="Screenshot 3" width="250"/>
+    <img src="https://i.postimg.cc/zVTKySCr/Screenshot-2024-08-10-105515.png" alt="Screenshot 4" width="250"/>
+    <img src="https://i.postimg.cc/14kDRYNB/Screenshot-2024-08-10-105539.png" alt="Screenshot 5" width="250"/>
+    <img src="https://i.postimg.cc/4YZtV7Ph/Screenshot-2024-08-10-105600.png" alt="Screenshot 6" width="250"/>
 </p>
