@@ -153,8 +153,8 @@ Future enhancements for MedChat include:
 ## Contact Information
 
 For any questions or inquiries, please contact:
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
+- **Email:** hruthikram63@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/hruthikram63)
 
 ## Screenshots
 
